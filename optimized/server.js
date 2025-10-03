@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const { Worker } = require("worker_threads");  // import Worker
+const { Worker } = require("worker_threads"); 
 const path = require("path");
 
 const app = express();
@@ -42,4 +42,5 @@ app.post("/api/process-data", async (req, res) => {
 app.listen(3000, () =>
   console.log("Server running on http://localhost:3000")
 );
+
 
