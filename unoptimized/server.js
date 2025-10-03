@@ -13,7 +13,7 @@ function heavyTask(n) {
 
 // Endpoint
 app.post("/api/process-data", (req, res) => {
-  const number = req.body.number || 40; // heavy enough to block
+  const number = req.body.number || 40; 
   const start = Date.now();
 
   const result = heavyTask(number);
@@ -26,3 +26,4 @@ app.post("/api/process-data", (req, res) => {
 });
 
 app.listen(3000, () => console.log("Server running on http://localhost:3000"));
+
