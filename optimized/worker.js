@@ -1,4 +1,3 @@
-// worker.js
 const { parentPort, workerData } = require("worker_threads");
 
 // CPU-heavy task: recursive Fibonacci
@@ -10,3 +9,4 @@ function heavyTask(n) {
 // Run the task and send result back
 const result = heavyTask(workerData.number);
 parentPort.postMessage(result);
+
