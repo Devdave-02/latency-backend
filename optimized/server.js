@@ -32,7 +32,7 @@ app.post("/api/process-data", async (req, res) => {
     const end = Date.now();
     res.json({
       result,
-      timeTaken: (end - start) / 1000 + "s",
+      timeTaken: (end - start) / 1000
     });
   } catch (err) {
     res.status(500).json({ error: err.message });
@@ -42,3 +42,4 @@ app.post("/api/process-data", async (req, res) => {
 app.listen(3000, () =>
   console.log("Server running on http://localhost:3000")
 );
+
