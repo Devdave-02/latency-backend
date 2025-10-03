@@ -22,7 +22,6 @@ function runWorker(number) {
   });
 }
 
-// Endpoint
 app.post("/api/process-data", async (req, res) => {
   const number = req.body.number || 40;
   const start = Date.now();
@@ -42,5 +41,6 @@ app.post("/api/process-data", async (req, res) => {
 app.listen(3000, () =>
   console.log("Server running on http://localhost:3000")
 );
+
 
 
