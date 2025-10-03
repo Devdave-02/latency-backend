@@ -21,9 +21,10 @@ app.post("/api/process-data", (req, res) => {
   const end = Date.now();
   res.json({
     result,
-    timeTaken: (end - start) / 1000 + "s"
+    timeTaken: (end - start) / 1000 
   });
 });
 
 app.listen(3000, () => console.log("Server running on http://localhost:3000"));
+
 
